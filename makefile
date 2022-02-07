@@ -3,8 +3,8 @@ CFLAGS = -O3 -Wall -g -fcheck=all -std=f2003 -pedantic
 
 OBJ = accuracy.o parameters.o BRENTM.o kvector.o energy.o runge_kutta.o simpson_int.o interpolation.o dgl.o matrixelements.o matrixelements_gauss.o
 
-haupt: $(OBJ)
-	$(COMPILER) $(CFLAGS) -o haupt haupt.f90 $(OBJ)
+main: $(OBJ)
+	$(COMPILER) $(CFLAGS) -o main main.f90 $(OBJ)
 	make clean
 
 BRENTM.o:
