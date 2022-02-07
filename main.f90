@@ -1,4 +1,4 @@
-program haupt
+program main
 use accuracy
 use kvector
 use dgl
